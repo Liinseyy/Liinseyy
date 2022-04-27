@@ -222,6 +222,7 @@ body {
     justify-content: center;
     align-items: center;
     animation:hide 3s ease-in-out;
+    animation-fill-mode: forwards;
   }
 
   .loadericon{
@@ -244,7 +245,6 @@ body {
       color:yellow;
       text-shadow: 0 0 7px yellow;
     }
-
   }
 
   @keyframes hide{
