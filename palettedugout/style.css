@@ -207,3 +207,51 @@ footer img {
   /*change le logo en blanc*/
   filter: invert(1);
 }
+
+  /*LOADER*/
+
+  .loader{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top:-50px;
+    position: absolute;
+    width:100%;
+    height:1632px;
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:hide 3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .loadericon{
+    color:rgb(255, 136, 0);
+    font-size: 60px;
+    animation: flash 1.2s linear infinite;
+  }
+
+  @keyframes flash{
+    0%{
+      color:yellow;
+      text-shadow: 0 0 7px yellow;
+    }
+
+    90%{
+      color:rgb(255, 136, 0);
+      text-shadow: none;
+    }
+    100%{
+      color:yellow;
+      text-shadow: 0 0 7px yellow;
+    }
+  }
+
+  @keyframes hide{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
