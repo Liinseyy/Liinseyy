@@ -2,6 +2,12 @@ $primaire:#9356DC;
 $secondaire:#FF79DA ;
 $tertiaire:#99E2D0;
 
+/*keyframe animation des cartes*/
+@keyframes flash 
+{
+    0% {opacity: .4;}
+	100% {opacity: 1;}
+}
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -13,7 +19,7 @@ a{
     color: rgb(66, 66, 66);
 }
 
-/* partie logo OHMYFOOD*/
+/*partie logo OHMYFOOD*/
 
 header nav{
     display:flex;
@@ -21,7 +27,7 @@ header nav{
     align-items:center;
     border-bottom: solid 1px white;
     box-shadow: grey 0 5px 5px;
-    
+
 }
 
 header img{
@@ -114,12 +120,12 @@ header img{
         margin-right:15px;
         color:grey;
     } 
-        .etapes:hover{
-            background-color: #d2b6f39a;
-            >.icons:hover{
+    .etapes:hover{
+        background-color: #d2b6f39a;
+        >.icons:hover{
                 color:$primaire;
-            }
         }
+    }
 
        
 /*Les chiffres dans les ronds*/
@@ -143,6 +149,8 @@ header img{
 h1{
     margin-left:20px;
 }
+
+
 .blockrestaurants{
     display:flex;
     flex-direction: column;
@@ -153,6 +161,12 @@ h1{
     padding: 5px 5px;
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0,0.1);
+    &:hover{
+    opacity:1;
+    -webkit-animation: flash 2s;
+    animation:flash 2s;
+    background-color: #99e2d05b;
+    }
     img
     {
         height: 190px;
@@ -161,19 +175,13 @@ h1{
         object-fit: cover;}
 
 }
-img:hover{
-    opacity:1;
-    -webkit-animation: flash 2s;
-    animation:flash 2s;
-    background-color: #c1e0ff;
-}
+
 .descriptionrestaurant h3{
     color:black;
     margin-left:10px;
 }
 .descriptionrestaurant p{
     margin:10px;
-    
 }
 
 /* le coeur*/
@@ -228,10 +236,3 @@ footer img{
     filter:invert(1);
 }
 
-@media screen and (min-width:1000px){
-
-    header {
-
-    }
-    
-}
