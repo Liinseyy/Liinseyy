@@ -208,51 +208,6 @@ body {
     filter: invert(1);
   }
 
-  /*LOADER*/
-
-  .loader{
-    position: absolute;
-    width:100%;
-    height:2310px;
-    background-color: #FF79DA ;
-    display: flex;
-    justify-content: center;
-    animation:hide 3s ease-in-out;
-    animation-fill-mode: forwards;
-  }
-
-  .loadericon{
-    padding-top: 500px;
-    color:#9356DC ;
-    font-size: 150px;
-    animation: flash 1.2s linear infinite;
-  }
-
-  @keyframes flash{
-    0%{
-      color:#99E2D0;
-      text-shadow: 0 0 7px #99E2D0;
-    }
-
-    90%{
-      color:#9356DC;
-      text-shadow: none;
-    }
-    100%{
-      color:#99E2D0;
-      text-shadow: 0 0 7px #99E2D0;
-    }
-  }
-
-  @keyframes hide{
-    0%{
-      opacity:1;
-    }
-    100%{
-      opacity:0;
-    }
-  }
-
 
 @media only screen and (min-width : 1024px){
 
