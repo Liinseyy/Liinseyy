@@ -1,0 +1,26 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sassrestaurants/main.scss:./restaurants/alafrancaise/style.css",
+    "sass2": "sass --watch ./sassrestaurants/main.scss:./restaurants/delicedessens/style.css",
+    "sass3": "sass --watch ./sassrestaurants/main.scss:./restaurants/noteenchantee/style.css",
+    "sass4": "sass --watch ./sassrestaurants/main.scss:./restaurants/palettedugout/style.css",
+    "dev": "concurrently --kill-others \"npm run sass\" \"npm run sass2\" \"npm run sass3\" \"npm run sass4\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liinseyy/Liinseyy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liinseyy/Liinseyy/issues"
+  },
+  "homepage": "https://github.com/Liinseyy/Liinseyy#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

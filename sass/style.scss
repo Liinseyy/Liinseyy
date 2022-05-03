@@ -2,12 +2,6 @@ $primaire:#9356DC;
 $secondaire:#FF79DA ;
 $tertiaire:#99E2D0;
 
-/*keyframe animation des cartes*/
-@keyframes flash 
-{
-    0% {opacity: .4;}
-	100% {opacity: 1;}
-}
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -122,14 +116,15 @@ header img{
     } 
     .etapes:hover{
         background-color: #d2b6f39a;
-        >.icons:hover{
-                color:$primaire;
-        }
+      .icons:hover{
+        color:$primaire;
     }
+}
 
        
 /*Les chiffres dans les ronds*/
 .number{
+    z-index: 0;
     display:flex;
     padding: 5px 10px;
     border: solid $primaire 1px;
@@ -145,12 +140,9 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 h1{
-    margin-left:20px;
+    margin-left:20px;}
 }
-
-
 .blockrestaurants{
     display:flex;
     flex-direction: column;
@@ -161,28 +153,19 @@ h1{
     padding: 5px 5px;
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0,0.1);
-    &:hover{
-    opacity:1;
-    -webkit-animation: flash 2s;
-    animation:flash 2s;
-    background-color: #99e2d05b;
-    }
-    img
-    {
+        img{
         height: 190px;
         width: 100%;
         border-radius: 20px 20px 0 0;
         object-fit: cover;}
-
+        .descriptionrestaurant h3{
+        color:black;
+        margin-left:10px;}
+        .descriptionrestaurant p{
+        margin:10px;}
 }
 
-.descriptionrestaurant h3{
-    color:black;
-    margin-left:10px;
-}
-.descriptionrestaurant p{
-    margin:10px;
-}
+
 
 /* le coeur*/
 .coeur{
@@ -194,7 +177,6 @@ h1{
     .fa-heart{
         font-size:20px;
     }
-
     .fa-heart:hover{
         font-size: 20px;
         font-weight: 900;
@@ -206,7 +188,6 @@ h1{
         transition-timing-function: linear;
         transition-duration: 0.5s;
     }
-
 }
 
 
@@ -218,21 +199,60 @@ footer{
     height:230px;
     display: flex;
     flex-direction: column;
-}
-footer p{
+    p{
     color:white;
-    margin: 0 0 15px 20px;
-}
-
-footer .material-icons{
+    margin: 0 0 15px 20px;}
+    .material-icons{
     padding: 0px 10px 0 0;
     display: inline;
-    align-items: center;
-}
-footer img{
+    align-items: center;}
+    img{
     width:120px;
     margin: 15px 0 25px 15px;
     /*change le logo en blanc*/
-    filter:invert(1);
+    filter:invert(1);}
 }
 
+  /*LOADER*/
+  .loader{
+      z-index: 1;
+    position: absolute;
+    width:100%;
+    height:2390px;
+    background-color: #ff79d9 ;
+    display: flex;
+    justify-content: center;
+    animation:hide 3s ease-in-out;
+    animation-fill-mode: forwards;
+        .loadericon{
+        padding-top: 500px;
+        color:#9356DC ;
+        font-size: 150px;
+        animation: loader 1.2s linear infinite;}
+  }
+
+  @keyframes loader{
+    0%{
+      color:#99E2D0;
+      text-shadow: 0 0 7px #99E2D0;
+    }
+
+    90%{
+      color:#9356DC;
+      text-shadow: none;
+    }
+    100%{
+      color:#99E2D0;
+      text-shadow: 0 0 7px #99E2D0;
+    }
+  }
+
+  @keyframes hide{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
