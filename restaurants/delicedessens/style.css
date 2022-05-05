@@ -1,4 +1,40 @@
 @charset "UTF-8";
+/*La transition des div menu*/
+@keyframes transition2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Loader accueil*/
+@keyframes loader {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #9356DC;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 body {
   background-color: rgb(241, 241, 241);
   margin: 0;
@@ -97,7 +133,7 @@ header img {
   flex-direction: column;
   /*le contenu est caché pour rester dans la div*/
   overflow: hidden;
-  animation: transition2 1s ease-in-out 0.5s;
+  animation: transition2 1.5s ease-in;
   /*.icone = div de l'icon check*/
 }
 .mainentree:hover .icone {
@@ -118,17 +154,6 @@ header img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes transition2 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .texte {
   width: 100%;
   margin-left: 1rem;
@@ -137,7 +162,6 @@ header img {
 }
 .texte > * {
   white-space: nowrap;
-  /*laisse des pointillés quand le texte est caché par le check*/
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;

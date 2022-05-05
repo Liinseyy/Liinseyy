@@ -1,4 +1,5 @@
-@import "variables.scss";
+@import "../compositions/variables.scss";
+@import "../compositions/animations.scss";
 
 body {
     background-color: rgb(241, 241, 241);
@@ -92,7 +93,7 @@ body {
     flex-direction: column;
     /*le contenu est caché pour rester dans la div*/
     overflow: hidden;
-    animation: transition2 1s ease-in-out 0.5s;
+    animation: transition2 1.5s ease-in;
     /*.icone = div de l'icon check*/
     &:hover .icone {
     margin-right: 0;
@@ -109,21 +110,15 @@ body {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;} 
   }  
-  
-    @keyframes transition2 {
-    0%   {opacity:0; }
-    50% {opacity: 0.5;}
-    100% {opacity:1; }
-    }
 
   .texte {
     width: 100%;
     margin-left: 1rem;
     max-width: 100%;
     overflow: hidden;
+    
      > * {
     white-space: nowrap;
-    /*laisse des pointillés quand le texte est caché par le check*/
     text-overflow: ellipsis;
     overflow: hidden;
     max-width: 100%;}
@@ -156,7 +151,7 @@ body {
     /*animation pour bouger le cadre à gauche*/
     transition-duration: 0.5s;
     transition-timing-function: ease;
-     > i {
+    > i {
     font-size: 30px;
     color: white;
     transition-duration: 0.5s;}

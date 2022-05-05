@@ -1,3 +1,39 @@
+/*La transition des div menu*/
+@keyframes transition2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Loader accueil*/
+@keyframes loader {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #9356DC;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -19,8 +55,7 @@ header nav {
   border-bottom: solid 1px white;
   box-shadow: grey 0 5px 5px;
 }
-
-header img {
+header nav img {
   width: 200px;
 }
 
@@ -66,12 +101,10 @@ header img {
   box-shadow: inset 0 -20px 30px #9356DC;
   border-radius: 28px;
 }
-
 .explorer:hover {
   background-color: #ffc5ef;
   box-shadow: inset 0 -20px 50px #bb92ee;
 }
-
 .explorer a {
   color: white;
 }
@@ -81,7 +114,6 @@ header img {
   display: flex;
   flex-direction: column;
 }
-
 .fonctionnement h1 {
   margin-left: 20px;
 }
@@ -105,19 +137,18 @@ header img {
   margin-bottom: 30px;
   font-size: 14px;
   width: 50%;
-}
-
-.icons {
-  display: flex;
-  margin-right: 15px;
   color: grey;
 }
-
 .etapes:hover {
   background-color: rgba(210, 182, 243, 0.6039215686);
-}
-.etapes:hover .icons:hover {
   color: #9356DC;
+}
+.etapes i {
+  display: flex;
+  margin-right: 15px;
+}
+.etapes p {
+  color: #000000;
 }
 
 /*Les chiffres dans les ronds*/
@@ -232,30 +263,6 @@ footer img {
   color: #9356DC;
   font-size: 150px;
   animation: loader 1.2s linear infinite;
-}
-
-@keyframes loader {
-  0% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-  90% {
-    color: #9356DC;
-    text-shadow: none;
-  }
-  100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-}
-@keyframes hide {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

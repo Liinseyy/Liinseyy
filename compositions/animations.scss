@@ -1,0 +1,35 @@
+  /*La transition des div menu*/
+
+@keyframes transition2 {
+    0%   {opacity:0; }
+    50% {opacity: 0.5;}
+    100% {opacity:1; }
+}
+    
+/* Loader accueil*/
+
+@keyframes loader{
+  0%{
+    color:#99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+
+  90%{
+    color:#9356DC;
+    text-shadow: none;
+  }
+  100%{
+    color:#99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+
+@keyframes hide{
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}

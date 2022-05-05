@@ -1,6 +1,5 @@
-$primaire:#9356DC;
-$secondaire:#FF79DA ;
-$tertiaire:#99E2D0;
+@import "../compositions/variables.scss";
+@import "../compositions/animations.scss";
 
 html{
     font-family: 'Roboto', sans-serif;
@@ -21,11 +20,8 @@ header nav{
     align-items:center;
     border-bottom: solid 1px white;
     box-shadow: grey 0 5px 5px;
-
-}
-
-header img{
-    width: 200px;
+    img{
+    width: 200px;}
 }
 
 .logo{
@@ -70,23 +66,21 @@ header img{
     background-color: $secondaire;
     box-shadow: inset 0 -20px 30px $primaire;
     border-radius: 28px;
-}
-    .explorer:hover{
+    &:hover{
     background-color: #ffc5ef;
-    box-shadow: inset 0 -20px 50px #bb92ee;
-    }
-        .explorer a{
+    box-shadow: inset 0 -20px 50px #bb92ee;}
+        a{
             color:white;
         }
-
+}
 /*FONCTIONNEMENT*/
 
 .fonctionnement{
     display: flex;
     flex-direction: column;
-}
-    .fonctionnement h1{
-        margin-left: 20px;
+
+    h1{
+        margin-left: 20px;}
     }
 
 .containeretapes{
@@ -108,20 +102,17 @@ header img{
     margin-bottom: 30px;
     font-size: 14px;
     width:50%;
+    color:grey;
+    &:hover{
+    background-color: #d2b6f39a;
+    color:$primaire;}
+    i{
+    display: flex;
+    margin-right:15px;}
+    p{
+        color:#000000;}
 }
-    .icons{
-        display: flex;
-        margin-right:15px;
-        color:grey;
-    } 
-    .etapes:hover{
-        background-color: #d2b6f39a;
-      .icons:hover{
-        color:$primaire;
-    }
-}
-
-       
+ 
 /*Les chiffres dans les ronds*/
 .number{
     z-index: 0;
@@ -175,8 +166,7 @@ h1{
     font-size: 20px;
     color:black;
     .fa-heart{
-        font-size:20px;
-    }
+        font-size:20px;}
     .fa-heart:hover{
         font-size: 20px;
         font-weight: 900;
@@ -186,8 +176,7 @@ h1{
         color: transparent;
         /*animation du coeur*/
         transition-timing-function: linear;
-        transition-duration: 0.5s;
-    }
+        transition-duration: 0.5s;}
 }
 
 
@@ -229,30 +218,4 @@ footer{
         color:#9356DC ;
         font-size: 150px;
         animation: loader 1.2s linear infinite;}
-  }
-
-  @keyframes loader{
-    0%{
-      color:#99E2D0;
-      text-shadow: 0 0 7px #99E2D0;
-    }
-
-    90%{
-      color:#9356DC;
-      text-shadow: none;
-    }
-    100%{
-      color:#99E2D0;
-      text-shadow: 0 0 7px #99E2D0;
-    }
-  }
-
-  @keyframes hide{
-    0%{
-      opacity:1;
-    }
-    100%{
-      opacity: 0;
-      visibility: hidden;
-    }
   }
