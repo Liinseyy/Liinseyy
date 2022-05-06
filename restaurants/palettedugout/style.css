@@ -131,7 +131,6 @@ header img {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  /*le contenu est caché pour rester dans la div*/
   overflow: hidden;
   animation: transition2 1.5s ease-in;
   /*.icone = div de l'icon check*/
