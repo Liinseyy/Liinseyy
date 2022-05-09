@@ -170,13 +170,14 @@ header nav img {
 }
 
 /*RESTAURANTS*/
+h1 {
+  margin-left: 20px;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.restaurants h1 {
-  margin-left: 20px;
 }
 
 .blockrestaurants {
@@ -189,6 +190,15 @@ header nav img {
   padding: 5px 5px;
   border-radius: 20px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+.blockrestaurants .nouveau {
+  background-color: #99E2D0;
+  color: #1b6150;
+  border-radius: 8%;
+  padding: 0.5rem;
+  position: absolute;
+  margin-top: 9px;
+  right: 5rem;
 }
 .blockrestaurants img {
   height: 190px;
@@ -268,6 +278,12 @@ footer img {
   color: #9356DC;
   font-size: 150px;
   animation: loader 1s linear infinite;
+}
+
+@media (min-width: 800px) {
+  .nouveau {
+    margin-right: 8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
