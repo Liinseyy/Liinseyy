@@ -1,13 +1,12 @@
 @charset "UTF-8";
 /*La transition des div menu*/
 @keyframes transition2 {
-  0% {
+  from {
+    transform: translateY(60px);
     opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -28,6 +27,12 @@
 }
 @keyframes hide {
   0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
@@ -124,7 +129,7 @@ header img {
   transition-duration: 0.5s;
 }
 
-.mainentree {
+.mainentree, .mainentree4, .mainentree3, .mainentree2 {
   margin: 15px auto 1rem auto;
   width: 95%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -132,25 +137,37 @@ header img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  animation: transition2 1.5s ease-in;
+  animation: transition2 1s;
   /*.icone = div de l'icon check*/
 }
-.mainentree:hover .icone {
+.mainentree:hover .icone, .mainentree4:hover .icone, .mainentree3:hover .icone, .mainentree2:hover .icone {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-.mainentree:hover i {
+.mainentree:hover i, .mainentree4:hover i, .mainentree3:hover i, .mainentree2:hover i {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
-.mainentree h3 {
+.mainentree h3, .mainentree4 h3, .mainentree3 h3, .mainentree2 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-.mainentree p {
+.mainentree p, .mainentree4 p, .mainentree3 p, .mainentree2 p {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainentree2 {
+  animation: transition2 1.5s;
+}
+
+.mainentree3 {
+  animation: transition2 2s;
+}
+
+.mainentree4 {
+  animation: transition2 2s;
 }
 
 .texte {
@@ -178,7 +195,7 @@ header img {
   display: flex;
   align-items: flex-end;
   margin-bottom: 1rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
@@ -204,7 +221,7 @@ header img {
 .commander {
   margin: 30px auto;
   border: 0;
-  padding: 15px 20px;
+  padding: 15px 35px;
   font-size: 1rem;
   text-align: center;
   color: white;
@@ -231,6 +248,7 @@ footer {
 footer p {
   color: white;
   margin: 0 0 15px 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 footer .material-icons {
   padding: 0px 10px 0 0;

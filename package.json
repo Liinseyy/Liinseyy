@@ -9,7 +9,7 @@
     "sass3": "sass --watch ./sassrestaurants/main.scss:./restaurants/noteenchantee/style.css",
     "sass4": "sass --watch ./sassrestaurants/main.scss:./restaurants/palettedugout/style.css",
     "sassaccueil": "sass --watch ./sassaccueil/style.scss:./style.css",
-    "dev": "concurrently --kill-others \"npm run sass\" \"npm run sass2\" \"npm run sass3\" \"npm run sass4\""
+    "dev": "concurrently --kill-others \"npm run sass\" \"npm run sass2\" \"npm run sass3\" \"npm run sass4\" \"npm run sassaccueil\""
   },
   "repository": {
     "type": "git",

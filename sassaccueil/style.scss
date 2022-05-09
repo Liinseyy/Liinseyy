@@ -204,18 +204,18 @@ footer{
 
   /*LOADER*/
   .loader{
-      z-index: 1;
+    z-index: 1;
     position: absolute;
     width:100%;
     height:2390px;
-    background-color: #ff79d9 ;
+    background-color: $secondaire ;
     display: flex;
     justify-content: center;
-    animation:hide 3s ease-in-out;
+    animation: hide 2s ease-in-out;
     animation-fill-mode: forwards;
         .loadericon{
         padding-top: 500px;
-        color:#9356DC ;
+        color:$primaire ;
         font-size: 150px;
-        animation: loader 1.2s linear infinite;}
+        animation: loader 1s linear infinite;}
   }
