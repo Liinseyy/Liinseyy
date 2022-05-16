@@ -43,6 +43,7 @@
 body {
   background-color: rgb(241, 241, 241);
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -55,7 +56,7 @@ nav {
 }
 nav .icontop {
   float: left;
-  padding-top: 20px;
+  padding-top: 8px;
   padding-left: 20px;
 }
 nav .material-icons {
@@ -67,7 +68,7 @@ h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 35px;
-  padding-top: 15px;
+  margin: 12px;
 }
 
 header img {
@@ -95,15 +96,23 @@ header img {
   align-items: center;
   justify-content: space-between;
 }
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  font-size: 35px;
+  margin: 30px 0;
+}
 .menu h2 {
+  margin: 15px 0 5px 0;
   padding-left: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 .menu .greenline {
   width: 3rem;
   padding: 0 5px;
   border-top: 4px solid #99E2D0;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 17px;
 }
 
 /*COEUR*/
@@ -132,6 +141,7 @@ header img {
 .mainentree, .mainentree4, .mainentree3, .mainentree2 {
   margin: 15px auto 1rem auto;
   width: 95%;
+  height: 78px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
   display: flex;
@@ -152,10 +162,12 @@ header img {
 .mainentree h3, .mainentree4 h3, .mainentree3 h3, .mainentree2 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  margin: 13px 0 5px 0;
 }
 .mainentree p, .mainentree4 p, .mainentree3 p, .mainentree2 p {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 8px 0 0 0;
 }
 
 .mainentree2 {
@@ -194,9 +206,9 @@ header img {
   color: rgb(66, 66, 66);
   display: flex;
   align-items: flex-end;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   margin-right: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 
@@ -248,12 +260,9 @@ footer {
 footer p {
   color: white;
   margin: 0 0 15px 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
-footer .material-icons {
+footer .fa-solid {
   padding: 0px 10px 0 0;
-  display: inline;
-  align-items: center;
 }
 footer img {
   width: 120px;

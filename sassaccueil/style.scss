@@ -54,10 +54,17 @@ header nav{
     flex-direction: column;
     text-align: center;
     background-color: #F6F6F6;
+    h1{
+        margin:20px 20px 0 20px;
+    }
+    p{
+        font-size: 17px;
+        color:#575656;
+    }
 }
 
 .explorer{
-    margin:25px;
+    margin:20px;
     border: 0;
     padding:15px 20px;
     font-size: 1rem;
@@ -80,7 +87,7 @@ header nav{
     flex-direction: column;
 
     h1{
-        margin-left: 20px;}
+        margin: 50px 0 25px 25px;}
     }
 
 .containeretapes{
@@ -92,58 +99,65 @@ header nav{
 }
 
 .etapes{
-    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    display: flex;
+    width: 90%;
     background-color: #fcfcfc;
-    border:solid 0px;
+    border: solid 0px;
     border-radius: 15px;
-    box-shadow:rgb(197, 195, 195) 1px 10px 10px ;
-    padding: 20px 60px;
-    margin-bottom: 30px;
+    box-shadow: rgb(197 195 195) 1px 10px 10px;
+    padding: 17px 0px;
+    margin: 22px 0px;
     font-size: 14px;
-    width:50%;
-    color:grey;
+    color: grey;
     &:hover{
     background-color: #d2b6f39a;
     color:$primaire;}
     i{
     display: flex;
-    margin-right:15px;}
+    padding-left:20px}
     p{
+        margin-left: -20px;
+        font-size: 17px;
         color:#000000;}
 }
  
 /*Les chiffres dans les ronds*/
 .number{
+    left: 8px;
     z-index: 0;
-    display:flex;
+    display: flex;
     padding: 5px 10px;
-    border: solid $primaire 1px;
+    border: solid #9356DC 1px;
     border-radius: 100%;
-    background-color: $primaire;
+    background-color: #9356DC;
     color: white;
     position: absolute;
-    margin:-72px;
 }
 
 /*RESTAURANTS*/
 
-h1{
-    margin-left:20px;}
+    .titrerestau{
+        padding: 35px 25px 5px 25px;
+        background-color: #F6F6F6;
+
+    }
 .restaurants{
+    background-color:#F6F6F6 ;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
+
 .blockrestaurants{
     display:flex;
     flex-direction: column;
     background-color: white;
-    width:80%;
+    width:90%;
     height:280px;
     margin: 10px 0px;
-    padding: 5px 5px;
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0,0.1);
     .nouveau{
@@ -153,7 +167,7 @@ h1{
         padding: 0.5rem;
         position: absolute;
         margin-top:9px;
-        right: 5rem;
+        right: 3rem;
     }
     img{
         height: 190px;
@@ -162,13 +176,14 @@ h1{
         object-fit: cover;}
     .descriptionrestaurant h3{
         color:black;
-        margin-left:10px;}
+        margin:15px 0 2px 10px;}
     .descriptionrestaurant p{
         margin:10px;}
 }
 
 /* le coeur*/
 .coeur{
+    margin-right: 15px;
     display: flex;
     justify-content: flex-end;
     float:right;
@@ -199,29 +214,33 @@ footer{
     flex-direction: column;
     p{
     color:white;
-    margin: 0 0 15px 20px;}
+    margin: 0 0 15px 30px;}
     .material-icons{
     padding: 0px 10px 0 0;
     display: inline;
     align-items: center;}
     img{
     width:120px;
-    margin: 15px 0 25px 15px;
+    margin:25px 0 10px 30px;
     /*change le logo en blanc*/
     filter:invert(1);}
+    .fa-solid{
+        padding: 0px 10px 0 0;
+    }
 }
 
   /*LOADER*/
   .loader{
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width:100%;
-    height:2390px;
+    height:100%;
     background-color: $secondaire ;
     display: flex;
     justify-content: center;
     animation: hide 2s ease-in-out;
     animation-fill-mode: forwards;
+    cursor:wait;
         .loadericon{
         padding-top: 500px;
         color:$primaire ;
@@ -232,5 +251,14 @@ footer{
 @media (min-width: 800px) {
     .nouveau{
         margin-right:8rem;
+    }
+    .number{
+        left:35px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .number{
+        left:70px;
     }
 }
