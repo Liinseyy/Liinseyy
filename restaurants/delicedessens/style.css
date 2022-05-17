@@ -142,6 +142,7 @@ header img {
   margin: 15px auto 1rem auto;
   width: 95%;
   height: 78px;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
   display: flex;
@@ -206,7 +207,7 @@ header img {
   color: rgb(66, 66, 66);
   display: flex;
   align-items: flex-end;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
   margin-right: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -215,6 +216,7 @@ header img {
 .icone {
   font-size: 20px;
   width: 7rem;
+  height: 78px;
   background: #99E2D0;
   display: flex;
   justify-content: center;
@@ -253,20 +255,33 @@ header img {
 footer {
   margin-top: 30px;
   background-color: #353535;
-  height: 230px;
+  height: 210px;
   display: flex;
   flex-direction: column;
 }
+footer a {
+  display: flex;
+  margin-left: 22px;
+}
 footer p {
   color: white;
-  margin: 0 0 15px 20px;
+  margin: 0 0 12px 0;
 }
 footer .fa-solid {
-  padding: 0px 10px 0 0;
+  padding-right: 14px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .fa-utensils {
+  color: white;
+  font-size: 17px;
+  padding-right: 16px;
 }
 footer img {
   width: 120px;
-  margin: 15px 0 25px 15px;
+  margin: 25px 0 25px 22px;
   /*change le logo en blanc*/
   filter: invert(1);
 }

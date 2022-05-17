@@ -1,30 +1,34 @@
 @import "../compositions/variables.scss";
 @import "../compositions/animations.scss";
 
-html{
+html {
     font-family: 'Roboto', sans-serif;
 }
-body{
-    margin:0;
+
+body {
+    margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(66, 66, 66);
 }
 
 /*partie logo OHMYFOOD*/
 
-header nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: solid 1px white;
     box-shadow: grey 0 5px 5px;
-    img{
-    width: 200px;}
+
+    img {
+        width: 200px;
+    }
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,64 +37,72 @@ header nav{
 
 /* Partie Localisation*/
 
-.localisation{
+.localisation {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
-    color: rgb(66, 66, 66);}
+    color: rgb(66, 66, 66);
+}
 
-    .icon{
-        margin-right: 20px;
-    }
+.icon {
+    margin-right: 20px;
+}
 
 /*RESERVEZ LE MENU*/
 
-.mainreservez{
-    padding:20px;
+.mainreservez {
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     background-color: #F6F6F6;
-    h1{
-        margin:20px 20px 0 20px;
+
+    h1 {
+        margin: 20px 20px 0 20px;
     }
-    p{
+
+    p {
         font-size: 17px;
-        color:#575656;
+        color: #575656;
     }
 }
 
-.explorer{
-    margin:20px;
+.explorer {
+    margin: 20px;
     border: 0;
-    padding:15px 20px;
+    padding: 15px 20px;
     font-size: 1rem;
     text-align: center;
-    color:white;
+    color: white;
     background-color: $secondaire;
     box-shadow: inset 0 -20px 30px $primaire;
     border-radius: 28px;
-    &:hover{
-    background-color: #ffc5ef;
-    box-shadow: inset 0 -20px 50px #bb92ee;}
-        a{
-            color:white;
-        }
+
+    &:hover {
+        background-color: #ffc5ef;
+        box-shadow: inset 0 -20px 50px #bb92ee;
+    }
+
+    a {
+        color: white;
+    }
 }
+
 /*FONCTIONNEMENT*/
 
-.fonctionnement{
+.fonctionnement {
     display: flex;
     flex-direction: column;
 
-    h1{
-        margin: 50px 0 25px 25px;}
+    h1 {
+        margin: 50px 0 25px 25px;
     }
+}
 
-.containeretapes{
+.containeretapes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,34 +110,40 @@ header nav{
     margin-bottom: 40px;
 }
 
-.etapes{
+.etapes {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    width: 90%;
+    width: 87%;
     background-color: #fcfcfc;
     border: solid 0px;
-    border-radius: 15px;
+    border-radius: 26px;
     box-shadow: rgb(197 195 195) 1px 10px 10px;
     padding: 17px 0px;
     margin: 22px 0px;
     font-size: 14px;
     color: grey;
-    &:hover{
-    background-color: #d2b6f39a;
-    color:$primaire;}
-    i{
-    display: flex;
-    padding-left:20px}
-    p{
+
+    &:hover {
+        background-color: #d2b6f39a;
+        color: $primaire;
+    }
+
+    i {
+        display: flex;
+        padding-left: 20px
+    }
+
+    p {
         margin-left: -20px;
         font-size: 17px;
-        color:#000000;}
+        color: #000000;
+    }
 }
- 
+
 /*Les chiffres dans les ronds*/
-.number{
-    left: 8px;
+.number {
+    left: 18px;
     z-index: 0;
     display: flex;
     padding: 5px 10px;
@@ -138,127 +156,145 @@ header nav{
 
 /*RESTAURANTS*/
 
-    .titrerestau{
-        padding: 35px 25px 5px 25px;
-        background-color: #F6F6F6;
+.titrerestau {
+    padding: 35px 25px 5px 25px;
+    background-color: #F6F6F6;
 
-    }
-.restaurants{
-    background-color:#F6F6F6 ;
+}
+
+.restaurants {
+    padding-bottom: 50px;
+    background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.blockrestaurants{
-    display:flex;
+.blockrestaurants {
+    display: flex;
     flex-direction: column;
     background-color: white;
-    width:90%;
-    height:280px;
+    width: 90%;
+    height: 280px;
     margin: 10px 0px;
     border-radius: 20px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0,0.1);
-    .nouveau{
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+
+    .nouveau {
         background-color: #99E2D0;
         color: darken($tertiaire, 50%);
         border-radius: 8%;
         padding: 0.5rem;
         position: absolute;
-        margin-top:9px;
-        right: 3rem;
+        margin-top: 9px;
+        right: 31px;
     }
-    img{
+
+    img {
         height: 190px;
         width: 100%;
         border-radius: 20px 20px 0 0;
-        object-fit: cover;}
-    .descriptionrestaurant h3{
-        color:black;
-        margin:15px 0 2px 10px;}
-    .descriptionrestaurant p{
-        margin:10px;}
+        object-fit: cover;
+    }
+
+    .descriptionrestaurant h3 {
+        color: black;
+        margin: 15px 0 2px 10px;
+    }
+
+    .descriptionrestaurant p {
+        margin: 10px;
+    }
 }
 
 /* le coeur*/
-.coeur{
-    margin-right: 15px;
+.coeur {
+    margin-top: 12px;
+    margin-right: 26px;
     display: flex;
     justify-content: flex-end;
-    float:right;
+    float: right;
     font-size: 20px;
-    color:black;
-    .fa-heart{
-        font-size:20px;}
-    .fa-heart:hover{
+    color: black;
+
+    .fa-heart {
+        font-size: 20px;
+    }
+
+    .fa-heart:hover {
         font-size: 20px;
         font-weight: 900;
-        background: linear-gradient(0deg, rgba(255,117,226,1) 23%, rgba(192,102,219,1) 100%);
+        background: linear-gradient(0deg, rgba(255, 117, 226, 1) 23%, rgba(192, 102, 219, 1) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         /*animation du coeur*/
         transition-timing-function: linear;
-        transition-duration: 0.5s;}
+        transition-duration: 0.5s;
+    }
 }
 
 
 
 /*LE FOOTER*/
-footer{
-    margin-top: 30px;
+footer {
     background-color: #353535;
-    height:230px;
+    height: 230px;
     display: flex;
     flex-direction: column;
-    p{
-    color:white;
-    margin: 0 0 15px 30px;}
-    .material-icons{
-    padding: 0px 10px 0 0;
-    display: inline;
-    align-items: center;}
-    img{
-    width:120px;
-    margin:25px 0 10px 30px;
-    /*change le logo en blanc*/
-    filter:invert(1);}
-    .fa-solid{
+
+    p {
+        color: white;
+        margin: 0 0 15px 30px;
+    }
+
+    img {
+        width: 120px;
+        margin: 25px 0 10px 30px;
+        /*change le logo en blanc*/
+        filter: invert(1);
+    }
+
+    .fa-solid {
+        font-size: 14px;
         padding: 0px 10px 0 0;
     }
 }
 
-  /*LOADER*/
-  .loader{
+/*LOADER*/
+.loader {
     z-index: 1;
     position: fixed;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     background-color: $secondaire ;
     display: flex;
     justify-content: center;
     animation: hide 2s ease-in-out;
     animation-fill-mode: forwards;
-    cursor:wait;
-        .loadericon{
+    cursor: wait;
+
+    .loadericon {
         padding-top: 500px;
-        color:$primaire ;
+        color: $primaire ;
         font-size: 150px;
-        animation: loader 1s linear infinite;}
-  }
+        animation: loader 1s linear infinite;
+    }
+}
 
 @media (min-width: 800px) {
-    .nouveau{
-        margin-right:8rem;
+    .nouveau {
+        margin-right: 8rem;
     }
-    .number{
-        left:35px;
+
+    .number {
+        left: 35px;
     }
 }
 
 @media (min-width: 1000px) {
-    .number{
-        left:70px;
+    .number {
+        left: 70px;
     }
 }

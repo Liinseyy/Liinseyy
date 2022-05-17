@@ -142,10 +142,10 @@ header nav img {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
-  width: 90%;
+  width: 87%;
   background-color: #fcfcfc;
   border: solid 0px;
-  border-radius: 15px;
+  border-radius: 26px;
   box-shadow: rgb(197, 195, 195) 1px 10px 10px;
   padding: 17px 0px;
   margin: 22px 0px;
@@ -168,7 +168,7 @@ header nav img {
 
 /*Les chiffres dans les ronds*/
 .number {
-  left: 8px;
+  left: 18px;
   z-index: 0;
   display: flex;
   padding: 5px 10px;
@@ -186,6 +186,7 @@ header nav img {
 }
 
 .restaurants {
+  padding-bottom: 50px;
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
@@ -209,7 +210,7 @@ header nav img {
   padding: 0.5rem;
   position: absolute;
   margin-top: 9px;
-  right: 3rem;
+  right: 31px;
 }
 .blockrestaurants img {
   height: 190px;
@@ -227,7 +228,8 @@ header nav img {
 
 /* le coeur*/
 .coeur {
-  margin-right: 15px;
+  margin-top: 12px;
+  margin-right: 26px;
   display: flex;
   justify-content: flex-end;
   float: right;
@@ -251,7 +253,6 @@ header nav img {
 
 /*LE FOOTER*/
 footer {
-  margin-top: 30px;
   background-color: #353535;
   height: 230px;
   display: flex;
@@ -261,11 +262,6 @@ footer p {
   color: white;
   margin: 0 0 15px 30px;
 }
-footer .material-icons {
-  padding: 0px 10px 0 0;
-  display: inline;
-  align-items: center;
-}
 footer img {
   width: 120px;
   margin: 25px 0 10px 30px;
@@ -273,6 +269,7 @@ footer img {
   filter: invert(1);
 }
 footer .fa-solid {
+  font-size: 14px;
   padding: 0px 10px 0 0;
 }
 
